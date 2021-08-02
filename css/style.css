@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*UTILIDADES*/
+.u-margin-bottom-peq {
+    margin-bottom: 2rem;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+/* HEADER BANNER */
+
+.banner {
+    background: url(../img/mariacodt.png) center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    padding-top: 20rem;
+    color: #ffffff;
+}
+
+.banner-titulo {
+    font-size: 5rem;
+}
+
+.banner-subtitulo {
+    font-size: 2.3rem;
+}
+
+/* FONTES */
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SEÇÃO SOBRE */
+
+#caixa {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre-descricao {
+    width: 52%;
+}
+
+.sobre-titulo {
+    font-size: 4rem;
+    color: #8B7B8B;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.sobre-descricao, .sobre-habilidades_titulo {
+    width: 63%;
+    display: block;
+    line-height: 1.5;
+
+}
+
+.sobre-descricao_destaque, .sobre-habilidades_titulo{
+    font-size: 2rem;
+}
+
+.sobre-habilidades {
+    margin-left: 10rem;
+}
+
+.sobre-habilidades_lista {
+    padding-left: 2rem;
+    line-height: 2;
+    font-size: 1.6rem;
+}
+
+
+/* BOTÕES */
+
+.btn {
+    border-radius: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-branco {
+    color: white;
+    background-color: #8B7B8B;
+}
+
+
+.btn-roxo {
+    color: white;
+    border: 1px solid black;
+    background-color: #8B7B8B;
+}
+
+
+/* REDES SOCIAIS */
+.footer {
+    text-align: center;
+}
+
+.redes-sociais_link {
+    display: inline-block;
+    width: 20%;
+    background-color: #8B7B8B;
+    padding: 2rem 0;
+    margin: 1rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+.redes-sociais_img, .redes-sociais_titulo {
+    margin-bottom: .5rem;
+}
+
+.footer_copy-texto {
+    color: #c4c4c4;
+    font-weight: lighter;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+/* TABLET PAISAGEM / CELULAR */
+
+@media (max-width: 768px){
+    html {
+        font-size: 8px;
+
+    }
+
+    #caixa{
+        display: block;
+
+    }
+    .container {
+        max-width: 960px;
+        padding: 10rem;
+    }
+    .sobre-descricao, .sobre-habilidades {
+        width: 100%;
+    }
+    .sobre-habilidades {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    .redes-sociais_link {
+        width: 60%;
+        margin: 1rem 1rem;
+        background-color: #8B7B8B;
+    }
+    .redes-sociais{
+        display: block;
+    }
+    
+    .banner{
+        background: url(../img/mariacoderesp.png) center no-repeat;
+        background-size: cover;
+        height: 110vh;
+        text-align: center;
+        padding-top: 23rem;
+        color:white;
+    }
+    .sobre_titulo {
+    font-size: 4rem;
+    color: #8B7B8B;
+    text-align: center;
+    }
+
+    .btn-branco {
+        color: #8B7B8B;
+        background-color: white;
+    }
+    
+    .btn-roxo {
+        color:white;
+        border: 1px solid black;
+        background-color: #8B7B8B;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
